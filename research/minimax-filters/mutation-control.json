@@ -1,0 +1,120 @@
+{
+  "status": "EXPLORATORY",
+  "scope": "Same starts, degrees and fixed parameters; one fixed mutation seed is not a universal method comparison.",
+  "search_sha256": "cc7e129dfa28dacbc1dbbe3f54fe42e791172f52edaba059f2487d3b34d25acb",
+  "baseline_sha256": "d107a8ee08a04125a9057e366b4cf094ad2b38c434e18cde04035b492884cedf",
+  "results": [
+    {
+      "status": "EXPLORATORY",
+      "scope": "Floating-point quadrature; no proof or global exponent claim.",
+      "seed": 20261015,
+      "degree": 10,
+      "evaluations": 4001,
+      "start": "combined",
+      "parameters": {
+        "eta": "0.5179812",
+        "tau": "0.4897258",
+        "rho": "0.0577528",
+        "blocks": 17,
+        "deficiency": "0.0102942",
+        "local_deficiency": "0.010511536",
+        "gamma": "0.489458464",
+        "guard": ".00001",
+        "preliminary": "0.4897158",
+        "alpha": "0.4897358",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.5178812"
+      },
+      "starting_max_log2_moment": 0.5178794956068835,
+      "candidate_max_log2_moment": 0.51787317152397,
+      "design": {
+        "r": [
+          "0.834834000",
+          "0.461480000",
+          "0.331903000",
+          "0.259568000",
+          "0.225300000",
+          "-0.259691296",
+          "-0.149399000",
+          "-0.083334000",
+          "0.071767000",
+          "0.047702000"
+        ],
+        "s": [
+          "1.273635000",
+          "-0.922011000",
+          "0.701392000",
+          "-0.525892000",
+          "0.357562000",
+          "0.117553000",
+          "-0.121306000",
+          "0.087366676",
+          "0.022824000",
+          "-0.013687000"
+        ],
+        "kappa": "1.035295000"
+      },
+      "seconds": 5.794424291001633
+    },
+    {
+      "status": "EXPLORATORY",
+      "scope": "Floating-point quadrature; no proof or global exponent claim.",
+      "seed": 20261015,
+      "degree": 14,
+      "evaluations": 4001,
+      "start": "combined",
+      "parameters": {
+        "eta": "0.5179812",
+        "tau": "0.4897258",
+        "rho": "0.0577528",
+        "blocks": 17,
+        "deficiency": "0.0102942",
+        "local_deficiency": "0.010511536",
+        "gamma": "0.489458464",
+        "guard": ".00001",
+        "preliminary": "0.4897158",
+        "alpha": "0.4897358",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.5178812"
+      },
+      "starting_max_log2_moment": 0.5178794956068835,
+      "candidate_max_log2_moment": 0.5178652783287302,
+      "design": {
+        "r": [
+          "0.834834000",
+          "0.461480000",
+          "0.331903000",
+          "0.259568000",
+          "0.225300000",
+          "-0.260514000",
+          "-0.149399000",
+          "-0.083334000",
+          "0.070179561",
+          "0.047935580",
+          "0.003259320",
+          "0.003486252",
+          "0.000469644",
+          "0.000000000"
+        ],
+        "s": [
+          "1.273635000",
+          "-0.922011000",
+          "0.701392000",
+          "-0.525892000",
+          "0.357562000",
+          "0.117553000",
+          "-0.121306000",
+          "0.089785000",
+          "0.022824000",
+          "-0.013687000",
+          "0.000000000",
+          "-0.007205712",
+          "0.001688151",
+          "0.000000000"
+        ],
+        "kappa": "1.035295000"
+      },
+      "seconds": 6.072672790847719
+    }
+  ]
+}
