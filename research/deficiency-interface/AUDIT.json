@@ -1,0 +1,607 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite controls and rational consequences of a written proof audit; not a full algorithm proof or a numerical filter certificate.",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "sha256": {
+    "audit.py": "1898d925093ec0ece694f7dd2c837ce158db4f62a22ce6e5db2e1544a42bead6",
+    "parameters.json": "4589ddba5066db6c19c014a4ef122ac1b1d8256d60a2b21417f6656e40b4c621"
+  },
+  "source_manifest_sha256": "d9b365d6d538e7337138804b9b667d1e4ed7f402626b088c342ff114aee92c3d",
+  "limits": {
+    "support_max_n": 6,
+    "weights": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "sampling_max_n": 6,
+    "variance_max_n": 10,
+    "cardinality_doublings": 64
+  },
+  "support_controls": {
+    "weight_multisets": 462,
+    "supports": 18943,
+    "disjoint_unions": 190474,
+    "sign_translations": 18943,
+    "increments": 53125,
+    "exchanges": 124770
+  },
+  "sampling_cases": 300,
+  "variance_cases": 501,
+  "continuation_counterexample": {
+    "n": 16,
+    "original_weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      17,
+      34,
+      68,
+      136,
+      272,
+      544
+    ],
+    "tie_weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "isolation_N0": 256,
+    "transformed_weights": [
+      4098,
+      4098,
+      4098,
+      4098,
+      4098,
+      4098,
+      4098,
+      4098,
+      4098,
+      4098,
+      69650,
+      139299,
+      278597,
+      557193,
+      1114385,
+      2228769
+    ],
+    "preliminary_density": "2/5",
+    "deficiency_density": "3/20",
+    "cap": 128,
+    "half_support_distribution": [
+      {
+        "large_positions": 0,
+        "halves": 45,
+        "support_size": 9
+      },
+      {
+        "large_positions": 1,
+        "halves": 720,
+        "support_size": 16
+      },
+      {
+        "large_positions": 2,
+        "halves": 3150,
+        "support_size": 28
+      },
+      {
+        "large_positions": 3,
+        "halves": 5040,
+        "support_size": 48
+      },
+      {
+        "large_positions": 4,
+        "halves": 3150,
+        "support_size": 80
+      },
+      {
+        "large_positions": 5,
+        "halves": 720,
+        "support_size": 128
+      },
+      {
+        "large_positions": 6,
+        "halves": 45,
+        "support_size": 192
+      }
+    ],
+    "expected_deficiency_argument": "E d(V) >= 5-log2(6) > 12/5 = (3/20)*16, since 6**5 < 2**13.",
+    "uniform_half_cap_continue_probability": "1/143"
+  },
+  "parameters": [
+    {
+      "id": "source",
+      "commit": "f25a303525df636c079e6a7c574527cccf56e611",
+      "gaps": {
+        "preliminary": "1/40000",
+        "block_space": "361/10000",
+        "coverage": "8867/50000000",
+        "representations": "3/20000"
+      },
+      "limiting_markov_lower": {
+        "exact": "8867/510867",
+        "outward_decimal": "0.0173567680041"
+      },
+      "n_useful_probability_at_least_half": 260517858,
+      "dyadic_m_absorbing_cardinality_loss": 131072,
+      "n_absorbing_cardinality_loss": 2311676,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "8867/510867",
+            "outward_decimal": "0.0173567680041"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "125797902274202097600/133758776479895247311",
+            "outward_decimal": "0.940483350586"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000003749999995999999999/2749999997999999999000000000",
+            "outward_decimal": "0.181818183315"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "125797902399874202097600000000/125805863274071710290749999711",
+            "outward_decimal": "0.999936720960"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000002501249999997498499999999999/2500249999997500499999999999000000000000",
+            "outward_decimal": "0.000199980003001"
+          }
+        }
+      ]
+    },
+    {
+      "id": "parameters_only",
+      "commit": "f25a303525df636c079e6a7c574527cccf56e611",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "501/20000",
+        "coverage": "679/40000000",
+        "representations": "1/50000"
+      },
+      "limiting_markov_lower": {
+        "exact": "97/58497",
+        "outward_decimal": "0.00165820469425"
+      },
+      "n_useful_probability_at_least_half": 28759524641,
+      "dyadic_m_absorbing_cardinality_loss": 2097152,
+      "n_absorbing_cardinality_loss": 36567603,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "97/58497",
+            "outward_decimal": "0.00165820469425"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "14229660479597500/113605501623573731",
+            "outward_decimal": "0.125255029696"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "42688981481438792500000000/42987109004564099428703693",
+            "outward_decimal": "0.993064722656"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    },
+    {
+      "id": "combined",
+      "commit": "f25a303525df636c079e6a7c574527cccf56e611",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "937/12500",
+        "coverage": "32119/1250000000",
+        "representations": "3/100000"
+      },
+      "limiting_markov_lower": {
+        "exact": "32119/12869619",
+        "outward_decimal": "0.00249572267834"
+      },
+      "n_useful_probability_at_least_half": 11208474158,
+      "dyadic_m_absorbing_cardinality_loss": 1048576,
+      "n_absorbing_cardinality_loss": 18136747,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "79741/32173491",
+            "outward_decimal": "0.00247846899797"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "114625573329818871/426535089692679971",
+            "outward_decimal": "0.268736561421"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "163750819206185455530000/164196404229102581045873",
+            "outward_decimal": "0.997286268082"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    },
+    {
+      "id": "block16_retuned",
+      "commit": "176794411d1facdc299e1f4dae99201f851e2d4f",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "23329/312500",
+        "coverage": "8125161967/312500000000000",
+        "representations": "3/100000"
+      },
+      "limiting_markov_lower": {
+        "exact": "8125161967/3218437661967",
+        "outward_decimal": "0.00252456714107"
+      },
+      "n_useful_probability_at_least_half": 10950417854,
+      "dyadic_m_absorbing_cardinality_loss": 1048576,
+      "n_absorbing_cardinality_loss": 18130726,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "811403209/321842653209",
+            "outward_decimal": "0.00252111769807"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "815040208937840149370576431/2981776424717708899370576431",
+            "outward_decimal": "0.273340483270"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "2445120629256195956741111729293/2451620837896848483847592979293",
+            "outward_decimal": "0.997348607688"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    },
+    {
+      "id": "block17_retuned",
+      "commit": "176794411d1facdc299e1f4dae99201f851e2d4f",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "22753/1250000",
+        "coverage": "2031313837/78125000000000",
+        "representations": "3/100000"
+      },
+      "limiting_markov_lower": {
+        "exact": "290187691/115180812691",
+        "outward_decimal": "0.00251940999737"
+      },
+      "n_useful_probability_at_least_half": 12344312254,
+      "dyadic_m_absorbing_cardinality_loss": 1048576,
+      "n_absorbing_cardinality_loss": 18156280,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "28859219/11517921719",
+            "outward_decimal": "0.00250559256297"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "16504943601045706658449349724/65969652930292772765627084099",
+            "outward_decimal": "0.250189941403"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "1056316391522185301272476758382336/1059482132916000498647320395491711",
+            "outward_decimal": "0.997011991712"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    },
+    {
+      "id": "block17_rounded",
+      "commit": "176794411d1facdc299e1f4dae99201f851e2d4f",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "73/4000",
+        "coverage": "26229/1000000000",
+        "representations": "3/100000"
+      },
+      "limiting_markov_lower": {
+        "exact": "1249/491249",
+        "outward_decimal": "0.00254249881424"
+      },
+      "n_useful_probability_at_least_half": 12129876230,
+      "dyadic_m_absorbing_cardinality_loss": 1048576,
+      "n_absorbing_cardinality_loss": 18157161,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "1249/491249",
+            "outward_decimal": "0.00254249881424"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "2751841761248158236/10855758503968032947",
+            "outward_decimal": "0.253491431321"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "2751841763997248158236000000/2759945680731631503110999711",
+            "outward_decimal": "0.997063740496"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    },
+    {
+      "id": "degree10_retuned",
+      "commit": "7d8fa41bf11ade011585060f77b90142b26b0f08",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "113493/6250000",
+        "coverage": "325001016313/12500000000000000",
+        "representations": "3/100000"
+      },
+      "limiting_markov_lower": {
+        "exact": "325001016313/129009376016313",
+        "outward_decimal": "0.00251920462177"
+      },
+      "n_useful_probability_at_least_half": 12345558173,
+      "dyadic_m_absorbing_cardinality_loss": 1048576,
+      "n_absorbing_cardinality_loss": 18155476,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "25757052431/10320507052431",
+            "outward_decimal": "0.00249571579188"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "1304020499985891747030692689951/5212511304439467957968192689951",
+            "outward_decimal": "0.250171256007"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "558865929123689240493992154009979/560540996609589048705285083697479",
+            "outward_decimal": "0.997011694958"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    },
+    {
+      "id": "degree14_retuned",
+      "commit": "7d8fa41bf11ade011585060f77b90142b26b0f08",
+      "gaps": {
+        "preliminary": "1/100000",
+        "block_space": "14091/781250",
+        "coverage": "203125339311/7812500000000000",
+        "representations": "3/100000"
+      },
+      "limiting_markov_lower": {
+        "exact": "203125339311/80640937839311",
+        "outward_decimal": "0.00251888612351"
+      },
+      "n_useful_probability_at_least_half": 12347133188,
+      "dyadic_m_absorbing_cardinality_loss": 1048576,
+      "n_absorbing_cardinality_loss": 18153213,
+      "scalable_counterexample": {
+        "n": 128,
+        "expected_deficiency_strict_lower": 26,
+        "cap_exponent": 63,
+        "one_half_support_exponent": 64,
+        "uniform_half_cap_continue_probability_lower": "1/11975573020964041433067793888190275875"
+      },
+      "finite_bounds": [
+        {
+          "n": 1000000,
+          "useful_block_lower": {
+            "exact": "129499863433/51609699863433",
+            "outward_decimal": "0.00250921558884"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "1",
+            "outward_decimal": "1"
+          }
+        },
+        {
+          "n": 1000000000,
+          "useful_block_lower": {
+            "exact": "509381523814184919561878000559/2036320414755285246099963938059",
+            "outward_decimal": "0.250148021953"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000001649999998099999999/650000000099999999000000000",
+            "outward_decimal": "0.769230771651"
+          }
+        },
+        {
+          "n": 1000000000000,
+          "useful_block_lower": {
+            "exact": "170981210961585587365970644363824/171493749889486115147916689285699",
+            "outward_decimal": "0.997011325904"
+          },
+          "high_deficiency_continue_upper": {
+            "exact": "500000000401249999999598499999999999/400249999999600499999999999000000000000",
+            "outward_decimal": "0.00124921923899"
+          }
+        }
+      ]
+    }
+  ]
+}
