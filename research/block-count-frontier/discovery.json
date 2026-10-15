@@ -1,0 +1,252 @@
+{
+  "status": "EXPLORATORY",
+  "scope": "Bounded floating-point screens; exact witnesses require interval replay.",
+  "predecessor_commit": "f25a303525df636c079e6a7c574527cccf56e611",
+  "design_id": "combined",
+  "reserves": {
+    "deficiency": ".00002",
+    "coverage": ".000026",
+    "representations": ".00003",
+    "filtered_lists": ".000016",
+    "visited_pairs": ".00001",
+    "block_space": ".001",
+    "moments": ".0001",
+    "guard": ".00001",
+    "epsilon": ".00000001",
+    "assembly": ".00001"
+  },
+  "bounds": {
+    "blocks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "eta": [
+      ".510",
+      ".550"
+    ],
+    "coarse_points": 401,
+    "refinement_points": 201,
+    "refinement_rounds": 2,
+    "moment_bisections": 40,
+    "grid": 128
+  },
+  "parameter_screens": 13651,
+  "moment_evaluations": 219718,
+  "runtime": {
+    "python": "3.14.3",
+    "numpy": "2.5.1"
+  },
+  "inputs_sha256": {
+    "filters.py": "88891ab69176cb49d7f9026ecb29a62a746717d4490e9cb4bb429947ce8dd768",
+    "verify.py": "57e126e8dd2166820a5c984e286309d196700347daf7b7aaa35684f3b16781f1",
+    "certify.py": "bed223aaa4f7aca80f2a9e634a2b106347c02c77504339ffd535e4ad90befe3e",
+    "SOURCE.json": "d9b365d6d538e7337138804b9b667d1e4ed7f402626b088c342ff114aee92c3d",
+    "witnesses.json": "fb15335d28bf8237ce1cf474a065650e74fdc2493344afce0fc39cea224982cd"
+  },
+  "search_sha256": "238c9ca2d22e2c79539380f78fe5663f77d7cd200eab3e640b8b6ee52d527a97",
+  "frontier": [
+    {
+      "blocks": 1,
+      "eta": 0.52207987,
+      "rho": 0.0709200816419668,
+      "tau": 0.49333997839073296,
+      "caps": {
+        "filtered_lists": 0.49333997839073296,
+        "visited_pairs": 0.49333997839073285,
+        "moments": 0.49333997262428525
+      }
+    },
+    {
+      "blocks": 2,
+      "eta": 0.5203423,
+      "rho": 0.06533803181749193,
+      "tau": 0.49180682948813903,
+      "caps": {
+        "filtered_lists": 0.49180682948813903,
+        "visited_pairs": 0.49180682948813903,
+        "moments": 0.49180682262430725
+      }
+    },
+    {
+      "blocks": 3,
+      "eta": 0.51957199,
+      "rho": 0.06286336386150075,
+      "tau": 0.4911271454776241,
+      "caps": {
+        "filtered_lists": 0.4911271454776241,
+        "visited_pairs": 0.4911271454776241,
+        "moments": 0.4911271373301872
+      }
+    },
+    {
+      "blocks": 4,
+      "eta": 0.51913713,
+      "rho": 0.061466349533058504,
+      "tau": 0.49074343937916537,
+      "caps": {
+        "filtered_lists": 0.49074343937916537,
+        "visited_pairs": 0.4907434393791653,
+        "moments": 0.49074343733018594
+      }
+    },
+    {
+      "blocks": 5,
+      "eta": 0.51885778,
+      "rho": 0.06056892058431599,
+      "tau": 0.4904969520360551,
+      "caps": {
+        "filtered_lists": 0.49049694731288307,
+        "visited_pairs": 0.49049694731288285,
+        "moments": 0.4904969520360551
+      }
+    },
+    {
+      "blocks": 6,
+      "eta": 0.5186631700000001,
+      "rho": 0.05994372406484283,
+      "tau": 0.49032523733017247,
+      "caps": {
+        "filtered_lists": 0.49032523395368616,
+        "visited_pairs": 0.49032523395368605,
+        "moments": 0.49032523733017247
+      }
+    },
+    {
+      "blocks": 7,
+      "eta": 0.51851982,
+      "rho": 0.0594832034283568,
+      "tau": 0.49019875243418387,
+      "caps": {
+        "filtered_lists": 0.49019875243418387,
+        "visited_pairs": 0.4901987524341838,
+        "moments": 0.4901987520360744
+      }
+    },
+    {
+      "blocks": 8,
+      "eta": 0.5184098399999999,
+      "rho": 0.059129885956429845,
+      "tau": 0.4901017108596068,
+      "caps": {
+        "filtered_lists": 0.4901017074829899,
+        "visited_pairs": 0.49010170748298976,
+        "moments": 0.4901017108596068
+      }
+    },
+    {
+      "blocks": 9,
+      "eta": 0.51832278,
+      "rho": 0.05885020038536316,
+      "tau": 0.490024900781997,
+      "caps": {
+        "filtered_lists": 0.490024900781997,
+        "visited_pairs": 0.4900249007819969,
+        "moments": 0.4900248932125308
+      }
+    },
+    {
+      "blocks": 10,
+      "eta": 0.5182521699999999,
+      "rho": 0.05862336144471235,
+      "tau": 0.4899625902713561,
+      "caps": {
+        "filtered_lists": 0.4899625890713518,
+        "visited_pairs": 0.48996258907135193,
+        "moments": 0.4899625902713561
+      }
+    },
+    {
+      "blocks": 11,
+      "eta": 0.51819373,
+      "rho": 0.05843561937288695,
+      "tau": 0.4899110339336263,
+      "caps": {
+        "filtered_lists": 0.4899110339336263,
+        "visited_pairs": 0.4899110339336263,
+        "moments": 0.4899110255654673
+      }
+    },
+    {
+      "blocks": 12,
+      "eta": 0.5181445800000001,
+      "rho": 0.058277721993861865,
+      "tau": 0.48986766215513444,
+      "caps": {
+        "filtered_lists": 0.48986766215513444,
+        "visited_pairs": 0.48986766215513433,
+        "moments": 0.4898676579184033
+      }
+    },
+    {
+      "blocks": 13,
+      "eta": 0.5181026599999999,
+      "rho": 0.0581430514317304,
+      "tau": 0.4898306729631294,
+      "caps": {
+        "filtered_lists": 0.48983067296312927,
+        "visited_pairs": 0.4898306729631294,
+        "moments": 0.4898306696831026
+      }
+    },
+    {
+      "blocks": 14,
+      "eta": 0.51806649,
+      "rho": 0.05802685309603707,
+      "tau": 0.4897987549772573,
+      "caps": {
+        "filtered_lists": 0.48979875064040285,
+        "visited_pairs": 0.4897987506404026,
+        "moments": 0.4897987549772573
+      }
+    },
+    {
+      "blocks": 15,
+      "eta": 0.51803495,
+      "rho": 0.05792552891832669,
+      "tau": 0.48977092810003525,
+      "caps": {
+        "filtered_lists": 0.48977092810003525,
+        "visited_pairs": 0.48977092810003514,
+        "moments": 0.48977092556546237
+      }
+    },
+    {
+      "blocks": 16,
+      "eta": 0.51800653,
+      "rho": 0.05783422793130934,
+      "tau": 0.4897468480575842,
+      "caps": {
+        "filtered_lists": 0.4897468480575842,
+        "visited_pairs": 0.4897468480575841,
+        "moments": 0.4897468446742502
+      }
+    },
+    {
+      "blocks": 17,
+      "eta": 0.51798118,
+      "rho": 0.0577527895069293,
+      "tau": 0.4897256011251145,
+      "caps": {
+        "filtered_lists": 0.48972560017298605,
+        "visited_pairs": 0.489725600172986,
+        "moments": 0.4897256011251145
+      }
+    }
+  ],
+  "seconds": 1.6451254999265075
+}

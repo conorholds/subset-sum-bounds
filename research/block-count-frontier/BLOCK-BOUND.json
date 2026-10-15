@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Necessary condition inside the conditional budget model, for every filter.",
+  "formula": "alpha > 1/2 - (1-h(1/4))/(J+1)",
+  "series_terms": 24,
+  "quarter_entropy_interval": [
+    "0.81127812445913286390",
+    "0.81127812445913286391"
+  ],
+  "first_excluded_blocks": 18,
+  "alpha_floor_at_18": [
+    "0.49006726970837541388",
+    "0.49006726970837541389"
+  ],
+  "gap_above_0.49": [
+    "0.000067269708375413889983",
+    "0.000067269708375413889984"
+  ],
+  "elementary_entropy_check": "3**75 < 2**119 implies h(1/4) > 0.81",
+  "entropy_below_one_check": "3**3 > 2**4 implies h(1/4) < 1",
+  "proof_sha256": "c770e563b92c16d80ccd954bc7758997810adb14de50f284b7828647c7c0e6ef",
+  "model_checker_sha256": "bed223aaa4f7aca80f2a9e634a2b106347c02c77504339ffd535e4ad90befe3e"
+}
