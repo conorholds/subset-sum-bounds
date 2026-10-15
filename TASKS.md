@@ -2,14 +2,14 @@
 
 These are starting questions, not promises of improvement. Read the
 [selected result](certificates/selected-result.json) and check
-[Issues](https://github.com/conorholds/subset-sum-bounds/issues),
-[Discussions](https://github.com/conorholds/subset-sum-bounds/discussions), and
+[Discussions](https://github.com/conorholds/subset-sum-bounds/discussions) and
 [PRs](https://github.com/conorholds/subset-sum-bounds/pulls) before claiming work.
 Claims coordinate effort; they do not exclude independent approaches.
 
 ## 1. Audit the generalized budget argument
 
 **Priority:** highest. **Good fit:** mathematical reading and adversarial review.
+**Coordinate:** [audit Discussion](https://github.com/conorholds/subset-sum-bounds/discussions/5).
 
 The current verifier checks moments and 14 budget margins. Its connection to
 an actual algorithm uses a rederivation of the manuscript's fixed constants.
@@ -33,6 +33,7 @@ Stop after resolving that interface or isolating a specific blocker.
 ## 2. Map the joint parameter frontier
 
 **Good fit:** constrained optimization and asymptotic cost analysis.
+**Coordinate:** [parameter Discussion](https://github.com/conorholds/subset-sum-bounds/discussions/6).
 
 The initial parameter tuning used a coarse screen and manual conservative
 rounding. It is not an optimality result. Hold the source or combined filter
@@ -55,6 +56,7 @@ disappears when every cost and strict margin is restored.
 ## 3. Change the filter search
 
 **Good fit:** numerical methods, harmonic analysis, or new constructions.
+**Coordinate:** [filter Discussion](https://github.com/conorholds/subset-sum-bounds/discussions/7).
 
 The initial degree-ten filter improves both original moments. Another 4,001
 mutation evaluations at degrees 10 and 14 made only tiny gains. Try a genuinely
