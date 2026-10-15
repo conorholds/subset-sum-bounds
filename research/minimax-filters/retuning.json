@@ -1,0 +1,66 @@
+{
+  "status": "EXPLORATORY",
+  "scope": "A fixed-reserve 17-block slice, not global optimality.",
+  "eta_bracket": [
+    ".5179",
+    ".51805"
+  ],
+  "bisections": 40,
+  "results": [
+    {
+      "degree": 10,
+      "input_sha256": "a16d60874edf51e632764435abc96e835aa65458f06bf3446b155624529938a8",
+      "parameters": {
+        "eta": "0.51798198",
+        "tau": "0.48972525",
+        "rho": "0.05775536",
+        "blocks": 17,
+        "deficiency": "0.01029475",
+        "local_deficiency": "0.0105116295",
+        "gamma": "0.4894583705",
+        "guard": ".00001",
+        "preliminary": "0.48971525",
+        "alpha": "0.48973525",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51788198"
+      },
+      "bracket": [
+        0.5179819889051915,
+        0.5179819889051916
+      ],
+      "evaluations": 43,
+      "rounded_log2_moments": [
+        0.5178801509879978,
+        0.5178808595199308
+      ]
+    },
+    {
+      "degree": 14,
+      "input_sha256": "7c32c6f12ce4fb40f2cbc64e451d508764a63ae161734a7a9735556cbc8e15e0",
+      "parameters": {
+        "eta": "0.51798422",
+        "tau": "0.48972396",
+        "rho": "0.05776256",
+        "blocks": 17,
+        "deficiency": "0.01029604",
+        "local_deficiency": "0.0105116329",
+        "gamma": "0.4894583671",
+        "guard": ".00001",
+        "preliminary": "0.48971396",
+        "alpha": "0.48973396",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51788422"
+      },
+      "bracket": [
+        0.5179842279124178,
+        0.517984227912418
+      ],
+      "evaluations": 43,
+      "rounded_log2_moments": [
+        0.5178806446733613,
+        0.5178831831231421
+      ]
+    }
+  ],
+  "retuner_sha256": "b3c83302ad7bf766e8b905f6ee2bd946f546b4287205bcefdeaba5f8d96d896c"
+}
