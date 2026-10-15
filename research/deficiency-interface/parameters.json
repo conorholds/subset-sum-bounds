@@ -1,0 +1,163 @@
+{
+  "scope": "Pinned inputs for a preliminary/coverage proof audit; not a numerical filter certificate.",
+  "repository": "https://github.com/conorholds/subset-sum-bounds",
+  "sources": [
+    {
+      "commit": "f25a303525df636c079e6a7c574527cccf56e611",
+      "path": "research/filter-budgets/witnesses.json",
+      "sha256": "fb15335d28bf8237ce1cf474a065650e74fdc2493344afce0fc39cea224982cd",
+      "parameters": [
+        {
+          "id": "source",
+          "parameters": {
+            "eta": "0.51772",
+            "tau": "0.48996",
+            "rho": "0.0567",
+            "blocks": 17,
+            "deficiency": "0.01004",
+            "local_deficiency": "0.0106",
+            "gamma": "0.48925",
+            "guard": "0.00001",
+            "preliminary": "0.489985",
+            "alpha": "0.49",
+            "epsilon": "0.00000001",
+            "moment_ceiling": "0.5169"
+          }
+        },
+        {
+          "id": "parameters_only",
+          "parameters": {
+            "eta": "0.51786",
+            "tau": "0.48980",
+            "rho": "0.05735",
+            "blocks": 17,
+            "deficiency": "0.01022",
+            "local_deficiency": "0.0105",
+            "gamma": "0.48948",
+            "guard": "0.00001",
+            "preliminary": "0.48979",
+            "alpha": "0.48981",
+            "epsilon": "0.00000001",
+            "moment_ceiling": "0.5177"
+          }
+        },
+        {
+          "id": "combined",
+          "parameters": {
+            "eta": "0.51800",
+            "tau": "0.48975",
+            "rho": "0.057815",
+            "blocks": 16,
+            "deficiency": "0.01027",
+            "local_deficiency": "0.01113",
+            "gamma": "0.48884",
+            "guard": "0.00001",
+            "preliminary": "0.48974",
+            "alpha": "0.48976",
+            "epsilon": "0.00000001",
+            "moment_ceiling": "0.5179"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "176794411d1facdc299e1f4dae99201f851e2d4f",
+      "path": "research/block-count-frontier/witnesses.json",
+      "sha256": "7a5239487a469455ec7f420c3717910a433a3e29434bbbbe4c2120600f63662a",
+      "parameters": [
+        {
+          "id": "block16_retuned",
+          "parameters": {
+            "eta": "0.5180065",
+            "tau": "0.4897470",
+            "rho": "0.0578342",
+            "blocks": 16,
+            "deficiency": "0.0102730",
+            "local_deficiency": "0.011129877",
+            "gamma": "0.488840123",
+            "guard": ".00001",
+            "preliminary": "0.4897370",
+            "alpha": "0.4897570",
+            "epsilon": ".00000001",
+            "moment_ceiling": "0.5179065"
+          }
+        },
+        {
+          "id": "block17_retuned",
+          "parameters": {
+            "eta": "0.5179812",
+            "tau": "0.4897258",
+            "rho": "0.0577528",
+            "blocks": 17,
+            "deficiency": "0.0102942",
+            "local_deficiency": "0.010511536",
+            "gamma": "0.489458464",
+            "guard": ".00001",
+            "preliminary": "0.4897158",
+            "alpha": "0.4897358",
+            "epsilon": ".00000001",
+            "moment_ceiling": "0.5178812"
+          }
+        },
+        {
+          "id": "block17_rounded",
+          "parameters": {
+            "eta": "0.51798",
+            "tau": "0.48973",
+            "rho": "0.05775",
+            "blocks": 17,
+            "deficiency": "0.01029",
+            "local_deficiency": "0.010508",
+            "gamma": "0.489462",
+            "guard": ".00001",
+            "preliminary": "0.48972",
+            "alpha": "0.48974",
+            "epsilon": ".00000001",
+            "moment_ceiling": "0.51788"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "7d8fa41bf11ade011585060f77b90142b26b0f08",
+      "path": "research/minimax-filters/witnesses.json",
+      "sha256": "136629daa3443e6c504e90e5a6a23f5402884edd98cb23e7bae6b71a61447f15",
+      "parameters": [
+        {
+          "id": "degree10_retuned",
+          "parameters": {
+            "eta": "0.51798198",
+            "tau": "0.48972525",
+            "rho": "0.05775536",
+            "blocks": 17,
+            "deficiency": "0.01029475",
+            "local_deficiency": "0.0105116295",
+            "gamma": "0.4894583705",
+            "guard": ".00001",
+            "preliminary": "0.48971525",
+            "alpha": "0.48973525",
+            "epsilon": ".00000001",
+            "moment_ceiling": "0.51788198"
+          }
+        },
+        {
+          "id": "degree14_retuned",
+          "parameters": {
+            "eta": "0.51798422",
+            "tau": "0.48972396",
+            "rho": "0.05776256",
+            "blocks": 17,
+            "deficiency": "0.01029604",
+            "local_deficiency": "0.0105116329",
+            "gamma": "0.4894583671",
+            "guard": ".00001",
+            "preliminary": "0.48971396",
+            "alpha": "0.48973396",
+            "epsilon": ".00000001",
+            "moment_ceiling": "0.51788422"
+          }
+        }
+      ]
+    }
+  ]
+}
