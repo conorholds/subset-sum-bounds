@@ -1,5 +1,5 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
   - name: Ideas, questions, and research coordination
     url: https://github.com/conorholds/subset-sum-bounds/discussions
-    about: Check existing task threads and coordinate a scoped investigation.
+    about: Use Discussions for research questions, claims, findings, and handoffs; submit reviewable contributions through PRs.

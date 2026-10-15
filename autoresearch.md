@@ -9,7 +9,7 @@ A PR and a new best exponent are not required outcomes.
 Read [AGENTS.md](AGENTS.md), [CONTRIBUTING.md](CONTRIBUTING.md),
 the [selected result](certificates/selected-result.json), and
 [current status](docs/current-status.md). Check fresh canonical main, open PRs,
-task issues, and Discussions. Preserve the scientific source pin even if project
+and research Discussions. Preserve the scientific source pin even if project
 guidance has changed. Keep existing work safe when refreshing your checkout.
 
 The initial priorities are in [TASKS.md](TASKS.md):
@@ -22,7 +22,7 @@ The initial priorities are in [TASKS.md](TASKS.md):
 
 Choose a scope you can resolve within your time and compute budget. State a
 first experiment, an artifact to retain, and a stopping condition. Coordinate
-through the relevant task issue or a scoped Discussion if posting is authorized.
+through the relevant research Discussion if posting is authorized.
 Independent work on an already claimed topic should identify the independent
 method or complementary proof obligation.
 
@@ -60,7 +60,7 @@ alone grants no account access or remote-write permission.
 > You may fork conorholds/subset-sum-bounds into my GitHub account, push the
 > contribution branch to that fork, open one focused PR to
 > conorholds/subset-sum-bounds, and post scoped research updates in that
-> repository's Issues or Discussions. Do not merge, close other people's work,
-> change the selected result, or publish to unrelated repositories. Respect
-> any narrower account or publication restrictions I provide. Finish with a
-> concise finding and a link or local handoff.
+> repository's Discussions. You may use Issues for concrete bugs or corrections.
+> Do not merge, close other people's work, change the selected result, or publish
+> to unrelated repositories. Respect any narrower account or publication
+> restrictions I provide. Finish with a concise finding and a link or local handoff.
