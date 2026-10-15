@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the specific research package you use; also credit the original OpenAI manuscript."
+type: software
+title: "Subset Sum Bounds: collaborative research on conditional exponent budgets"
+authors:
+  - name: "Subset Sum Bounds contributors"
+repository-code: "https://github.com/conorholds/subset-sum-bounds"
+url: "https://github.com/conorholds/subset-sum-bounds"
+license: Apache-2.0
+date-released: 2026-10-15
+abstract: "Reproducible filter and parameter experiments for a conditional worst-case Subset Sum budget model. The complete algorithmic bound remains subject to independent review."
+references:
+  - type: report
+    title: "Subset Sum in Time O(2^{0.49n})"
+    authors:
+      - name: "OpenAI"
+    year: 2026
+    url: "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026"

@@ -1,0 +1,26 @@
+name: A scoped research question
+description: Propose a distinct question, mechanism, or handoff.
+title: "Research: "
+labels: [research]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and relevance
+      description: Name the family, parameter range, or proof obligation and why it matters to the complete budget.
+    validations:
+      required: true
+  - type: textarea
+    id: predecessor
+    attributes:
+      label: Starting point and overlap
+      description: Link the source commit/package and related issues, discussions, or PRs; explain what is distinct.
+    validations:
+      required: true
+  - type: textarea
+    id: experiment
+    attributes:
+      label: First experiment and stopping condition
+      description: Give an initial command or proof step, a time/compute limit, and the evidence you would retain.
+    validations:
+      required: true

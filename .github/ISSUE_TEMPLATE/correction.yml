@@ -1,0 +1,24 @@
+name: Mathematical or checker correction
+description: Report a gap, counterexample, reproducibility failure, or attribution error.
+title: "Correction: "
+labels: [audit]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Exact source and claim
+      description: Give a commit, file/section, witness, or inequality.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Explain the missing implication, counterexample, command/output, or attribution correction. Distinguish numerical failure from an algorithmic gap.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Impact and possible next step
+      description: Which conclusions are affected, and what would resolve the issue?

@@ -1,0 +1,5 @@
+/certificates/ @conorholds
+/research/filter-budgets/certify.py @conorholds
+/research/filter-budgets/verify.py @conorholds
+/scripts/check_project.py @conorholds
+/.github/workflows/ @conorholds

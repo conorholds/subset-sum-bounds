@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "title": "Retuned degree-ten filters",
+  "validation_level": "interval-checked-conditional",
+  "independent_review": "pending",
+  "alpha": "0.48976",
+  "witness_id": "combined",
+  "witnesses": "research/filter-budgets/witnesses.json",
+  "certificate": "research/filter-budgets/CERTIFICATE.json",
+  "source_manifest": "research/filter-budgets/SOURCE.json",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "model": "research/filter-budgets/README.md",
+  "review": "docs/current-status.md",
+  "reproduce": "make verify",
+  "attribution": "Initial experiments maintained by conorholds with OpenAI Codex assistance; source algorithm and degree-six construction by OpenAI."
+}

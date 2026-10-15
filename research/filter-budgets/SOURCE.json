@@ -1,0 +1,45 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "live_main_checked_utc": "2026-10-15T10:41:56.813507+00:00",
+  "live_main_sha": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "license": "Apache-2.0",
+  "attribution": "The original algorithm, filtering architecture, source coefficients and proofs are OpenAI's. This package rederives a conditional numerical budget model and supplies new filter coefficients, parameter witnesses and independent interval calculations.",
+  "files": [
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/aliases.tex",
+      "sha256": "828e8ef5b3173a4e0a9818679ad658e291ef7f2a3cbe56334a12a271f88b2e5f",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/aliases.tex"
+    },
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/checksum.tex",
+      "sha256": "3c0d8f4ae1810e420c4a1e2ee098e4878e9ad39c152c5395eb7ab273078d9818",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/checksum.tex"
+    },
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/filtering.tex",
+      "sha256": "17443991a51fa09b86c8523ec4cada86cb32833d37b9e9fef0b38b56eb814b8e",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/filtering.tex"
+    },
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/implementation.tex",
+      "sha256": "ef78713f1e782ccb8c0360aa2ff68e0145cef9105371423e2617215d0d6e3aea",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/implementation.tex"
+    },
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/introduction.tex",
+      "sha256": "583a20059e520cff2aa5d99c5c7a457da6d6deae83a664813cc2b474a1920376",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/introduction.tex"
+    },
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/numerical.tex",
+      "sha256": "a4cc12248568d90368197466f562944f119b8f68535f72c576dd2f342b33b6dd",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/numerical.tex"
+    },
+    {
+      "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex",
+      "sha256": "7a5681c2a0ec43838737d517978a49d6b2d68125f6419526a00d053a283c00ba",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex"
+    }
+  ]
+}
