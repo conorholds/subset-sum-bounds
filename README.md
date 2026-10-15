@@ -91,14 +91,6 @@ python research/filter-budgets/search.py --start combined --parameters combined 
 Search output is exploratory. A contribution needs a separate certificate and
 an explanation of how its improvement affects the complete budget.
 
-## Credit and license
+## License
 
-Maintained by [conorholds](https://github.com/conorholds), with initial research
-and repository preparation assisted by OpenAI Codex. The source algorithm and
-degree-six construction are OpenAI's. Our collaboration approach is inspired by
-Douglas Colkitt's [integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds);
-the instructions here are written for this problem.
-
-Code and project documentation are licensed under [Apache 2.0](LICENSE), the
-same license used by that project. See [NOTICE](NOTICE),
-[CONTRIBUTORS.md](CONTRIBUTORS.md), and [CITATION.cff](CITATION.cff) for attribution.
+[Apache 2.0](LICENSE). See [NOTICE](NOTICE) for source attribution.

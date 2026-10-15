@@ -2,8 +2,6 @@ Subset Sum Bounds
 Copyright 2026 conorholds and contributors.
 
 This project's code and documentation are distributed under Apache License 2.0.
-The initial numerical exploration and repository preparation used substantial
-OpenAI Codex assistance. The maintainers remain responsible for the claims.
 
 Mathematical source:
 OpenAI, "Subset Sum in Time O(2^{0.49n})", October 4, 2026,
@@ -12,12 +10,3 @@ The original algorithm, filtering architecture, baseline coefficients, and
 manuscript arguments are OpenAI's. Source paths and hashes are preserved in
 research/filter-budgets/SOURCE.json. The new filter coefficients, rederived
 conditional budget model, and computational checks are this project's additions.
-
-Collaboration inspiration:
-Douglas Colkitt's CrocSwap/integer-mult-bounds project (Apache-2.0), consulted at
-commit 0fdd7d82de03e43c9e5a1000dfbcd380d1b687d2.
-Our contribution guides are written for this Subset Sum project. The standard
-Apache license text is reproduced without modification in LICENSE.
-
-Contributor-specific credit and later assistance disclosures belong in
-CONTRIBUTORS.md and the corresponding research packages and pull requests.
