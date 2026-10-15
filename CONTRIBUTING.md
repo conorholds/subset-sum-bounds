@@ -80,6 +80,14 @@ exact evidence, commands and outcomes, open obligations, and attribution.
 Disclose substantial AI assistance and remain responsible for the submission.
 One PR can be a correction or independent check without changing `alpha`.
 
+GitHub verification is started manually by `conorholds`. In **Actions → Verify →
+Run workflow**, keep the branch set to `main` and enter the PR number, or leave
+it blank to check `main`. The run pins the selected commit, runs `make check`,
+requires committed files to remain unchanged, and saves fresh interval receipts
+for 14 days. Its **Verify certificates** result appears on that exact commit;
+new PR commits need a new run. Contributors should run `make check` locally
+before requesting verification.
+
 Only maintainers promote the selected result. Promotion requires a fresh replay,
 an explicit comparison of all costs, and review of the changed mathematical
 implication by someone other than its author. Preserve the prior checkpoint and
