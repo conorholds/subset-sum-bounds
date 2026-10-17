@@ -238,6 +238,32 @@ class CertificateTests(unittest.TestCase):
 
 
 class SearchTests(unittest.TestCase):
+    def test_conditional_law_update_satisfies_the_full_probability_simplex_stationarity_condition(self):
+        h, g = density.initializations()['split_and_single_peaks']
+        beta = .4245
+        state = density.optimize_kernel(h, g, beta)
+        kernel = state['K']
+        likelihood = np.log2(h)[density.SHIFTS]+np.log2(g)[None, :]
+        entropy = (kernel*np.log2(density.N*kernel)).sum(axis=1)
+        scores = (kernel*likelihood).sum(axis=1)
+        i1 = np.exp2(density.LAM[0]*(density.DELTA+entropy-scores))
+        i2 = np.exp2(density.LAM[1]*((1+2*density.RATIO)*entropy-(1+density.RATIO)*scores))
+        c1, c2 = beta*density.LAM[0]*i1, (1-beta)*density.LAM[1]*i2
+        a = c1+(1+2*density.RATIO)*c2
+        b = c1+(1+density.RATIO)*c2
+        gradient = a[:, None]*np.log2(density.N*kernel)-b[:, None]*likelihood
+        self.assertLess(np.max(np.ptp(gradient, axis=1)), 1e-8)
+
+    def test_temperatures_outside_the_pareto_interval_are_dominated_pointwise(self):
+        h, g = density.initializations()['split_and_single_peaks']
+        low = density.TAU/density.ETA
+        self.assertAlmostEqual(low, (1+density.RATIO)/(1+2*density.RATIO))
+        for before, after in [(1.1, 1.), (low-.1, low)]:
+            outside = density.state(h, g, np.full(density.N, before))
+            inside = density.state(h, g, np.full(density.N, after))
+            self.assertLessEqual(np.max(inside['integrands']-outside['integrands']), 1e-12)
+            self.assertTrue(np.all(inside['integrands'].mean(axis=1)<outside['integrands'].mean(axis=1)))
+
     def test_density_projection_and_predecessor_bindings_match_exact_inputs(self):
         discovery = json.loads((HERE/'density-discovery.json').read_text())
         start = json.loads((HERE/'start.json').read_text())

@@ -167,6 +167,68 @@ moment reserve `0.0001`, and assembly reserve `0.00001`. Its largest strictly
 fitting integer packing count is 16; that old coverage inequality fails.
 The imported fractional lemma supplies the replacement argument.
 
+## 3. A temperature restriction and a global conditional-law update
+
+Fix the two positive continuous normalized marginal test densities `h,g` and a difference
+`x`. Write `L(w)=log2 h(x+w)+log2 g(w)` and use the probability law
+`K_theta(w)=2^(theta L(w))/Z_theta`. Put `B_theta=E_theta L`,
+`D_theta=theta B_theta-log2 Z_theta`, and `S_theta=B_theta`.
+Then `B_theta'=ln(2) Var_theta(L)>=0`, and the two pointwise exponents obey
+
+```text
+d/dtheta [lambda1(Delta+D_theta-S_theta)]
+  =lambda1(theta-1) B_theta',
+d/dtheta [lambda2((1+2a)D_theta-(1+a)S_theta)]
+  =lambda2((1+2a)theta-(1+a)) B_theta'.
+```
+
+Thus clipping `theta` to `[tau/eta,1]` cannot increase either moment:
+both exponents decrease when approaching that interval from either side.
+In the constant-power family, `theta=1/kappa`; hence a Pareto-efficient
+construction can be sought with **`1<=kappa<=eta/tau`**. Keep the test
+densities fixed by rescaling the kernel polynomials when changing `kappa`:
+`r_new=(kappa_old/kappa_new)r_old`, and likewise for `s`.
+Strict moment inequalities persist under sufficiently accurate interior
+rational approximations. This is a mathematical domain reduction; the
+retained run used the wider numerical box stated above.
+
+The exploratory conditional-law update also has a global justification
+with the marginal tests fixed. For `0<beta<1`, minimize
+
+```text
+J(K)=beta I1(K)+(1-beta)I2(K),
+I1(K)=2^[lambda1(Delta+D(K)-S(K))],
+I2(K)=2^[lambda2((1+2a)D(K)-(1+a)S(K))],
+D(K)=integral K log2 K, S(K)=integral K L.
+```
+
+At a candidate `K_theta`, define
+`c1=beta lambda1 I1`, `c2=(1-beta)lambda2 I2`,
+`A=c1+(1+2a)c2`, and `B=c1+(1+a)c2`. The scalar equation used in the code is
+`F(theta)=A theta-B=0`. Its endpoint signs bracket a root in `[tau/eta,1]`,
+and
+
+```text
+F'(theta)=A+ln(2) B_theta' [lambda1 c1(theta-1)^2
+                      +lambda2 c2((1+2a)theta-(1+a))^2] > 0.
+```
+
+This proves uniqueness of the scalar root and justifies bisection, including
+constant `L`.
+To see that this root minimizes over **all** conditional probability laws,
+use the tangent inequality for each exponential and the exact identity
+
+```text
+D(K)-D(K_theta)=theta[S(K)-S(K_theta)]+KL(K || K_theta).
+```
+
+At the root the linear score term cancels, giving
+`J(K)-J(K_theta)>=ln(2) A KL(K || K_theta)>=0`. This argument applies
+to finite circles and to continuous densities with finite relative entropy;
+infinite-entropy laws cannot improve the objective. It proves optimality
+only for the conditional law with both marginal tests fixed. The alternating
+search over the marginal densities remains a bounded local method.
+
 ## Replay and limitations
 
 From the repository root, with the existing requirements installed:
