@@ -196,9 +196,10 @@ the source. A restriction with `l` small weights and `k` large weights has
 |Sigma(U)| = 2^k(l+1),     D(U)=l-log2(l+1).                 (8)
 ```
 
-Different large subsets differ by at least `C(n+1)` in their main parts;
-all small-weight changes together contribute at most `Cn+n`. Since `C>n`,
-these cannot cancel. For a fixed large subset, the `l+1` small multiplicities
+Different large subsets differ by at least `C(n+1)` in their main parts.
+All small-weight main-part changes and all tie-weight changes together
+contribute at most `Cn+n`. Since `C>n`, these cannot cancel. For a fixed
+large subset, the `l+1` small multiplicities
 give distinct sums. This proves (8) for legal positive transformed inputs.
 
 One finite control uses `n=14,z=7,N0=256,m=4,d=3/25,delta=13/100`.
