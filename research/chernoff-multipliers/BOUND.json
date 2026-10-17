@@ -1,0 +1,106 @@
+{
+  "allowed_first_multiplier": [
+    "1",
+    "10"
+  ],
+  "alpha_lower_bound": [
+    "0.489732159404210006",
+    "0.489732159404210007"
+  ],
+  "author": "conorholds",
+  "bounder_sha256": "645f85c3250dbc912a06371707fea7e1bb0e1998fb5cd77161823bef5647b525",
+  "cost_floor_derivative": [
+    "-0.572507283883263215",
+    "-0.572507283883263214"
+  ],
+  "cost_floor_tau": [
+    "0.489722159404210006",
+    "0.489722159404210007"
+  ],
+  "eta_cutoff": "0.517987190",
+  "first_moment_residual_lower_bound": [
+    "3.79948047497855227E-9",
+    "3.79948047497855228E-9"
+  ],
+  "inputs_sha256": {
+    "package": {
+      "candidates.json": "b19040620b313e48967ec0cdbfc530791ac1d3d6af77502ea21392d96e70f0b0",
+      "frontier_bound.py": "645f85c3250dbc912a06371707fea7e1bb0e1998fb5cd77161823bef5647b525",
+      "interval_check.py": "bff86da599998a02b92f7be100308f832b253e2321eb6513ee5353e5ce51e1fa",
+      "joint_search.py": "02b9d8d528a67b1503c4e071787301e9fcd78e16a4fb7a41ef6d5e6d713de780",
+      "multiplier_search.py": "d03e9f91e56c96d2392c0fd76f8dc3816501042d123f54d51ae22db119b60e23",
+      "predecessor.json": "77e094bb89446dd2d295d2da975d5172ffc2d89f65fd2322224d6dab71b0110a"
+    },
+    "shared": {
+      "SOURCE.json": "d9b365d6d538e7337138804b9b667d1e4ed7f402626b088c342ff114aee92c3d",
+      "certify.py": "bed223aaa4f7aca80f2a9e634a2b106347c02c77504339ffd535e4ad90befe3e",
+      "requirements.txt": "3ea3b8756d1083457cb0ff3ec10df40777dc1a92df995e60720992517454d508"
+    }
+  },
+  "moments": {
+    "beta": [
+      "0.119999999999999999",
+      "0.120000000000000001"
+    ],
+    "first_multiplier_derivative": [
+      "-9.93520321989619105E-12",
+      "-9.93520321969486028E-12"
+    ],
+    "grid": 256,
+    "interval_digits": 70,
+    "log2_moment_intervals": [
+      [
+        "0.517887193874564472",
+        "0.517887193874564473"
+      ],
+      [
+        "0.517926075054341243",
+        "0.517926075054341244"
+      ]
+    ],
+    "moment_intervals": [
+      [
+        "1.43185677815578702",
+        "1.43185677815578703"
+      ],
+      [
+        "1.43189536776026301",
+        "1.43189536776026302"
+      ]
+    ],
+    "node_zero": {
+      "P": [
+        "1.72352287700594916",
+        "1.72352287700594917"
+      ],
+      "Y": [
+        "2.36099243410466116",
+        "2.36099243410466117"
+      ]
+    },
+    "outer_error_upper": [
+      "9.85568145072084255E-23",
+      "2.91544424844254182E-23"
+    ],
+    "sigma": [
+      "0.299999999999999999",
+      "0.300000000000000001"
+    ],
+    "zero_free_theta_upper": "0.395729862812660311"
+  },
+  "scope": "Fixed predecessor filters and the explicitly retained reserves; all positive integer block counts.",
+  "status": "PASS",
+  "tangent_derivative": [
+    "-9.93520321989619105E-12",
+    "-9.93520321969486028E-12"
+  ],
+  "tangent_log2_moment": [
+    "0.517887193874564472",
+    "0.517887193874564473"
+  ],
+  "tangent_multiplier": "8.557369020",
+  "tau_lower_bound_for_18_or_more_blocks": [
+    "0.490067269708375413",
+    "0.490067269708375414"
+  ]
+}
