@@ -1,0 +1,156 @@
+{
+  "author": "conorholds",
+  "below_threshold_obstruction": {
+    "base_two_probability_exponent_per_n": "6141487868130355951/4000000000000000000000000",
+    "bit_guard_n_cutoff": 4194304,
+    "bound": "Pr[D(S)<=delta*m | balance] <= 2^(-exponent_per_n*n)",
+    "compatible_n_multiple": 200000000,
+    "d": "1030957/100000000",
+    "exponent_at_first_compatible_n": "6141487868130355951/20000000000000000",
+    "first_compatible_n_after_cutoffs": 200000000,
+    "q_logarithm_cutoff": 4096,
+    "rho": "5778199/100000000",
+    "scope": "Positive legal transformed family; obstruction to a uniform useful-block guarantee below d, not to the full algorithm.",
+    "smaller_delta": "1030957/200000000"
+  },
+  "cardinality_controls": {
+    "canonical_projections": 187903,
+    "normalized_adjacent_inequalities": 7294,
+    "uniform_cover_inequalities": 8580,
+    "weight_multisets": 1287
+  },
+  "exact_probability_controls": 10528,
+  "inputs_sha256": {
+    "audit.py": "55528830649f2608f524d01680f671469857191a13abdf52a3b62b9153c9cf45",
+    "budget.py": "c7eabf072bbd1fc0df2963a8d3c9b0f2e00707a91c6efa556f2a1793f708657e",
+    "candidates.json": "3dcbbc66450fcb3963a737a4b0b46f3233ece23ce9db004a346db366c32c6453",
+    "predecessor.json": "eea73ea7831a6c99beb67c9e20a1922384577545dd56af16dc78a797f9652931"
+  },
+  "limits": {
+    "integer_weights": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "maximum_n": 8,
+    "probability_maximum_n": 32
+  },
+  "parameters": [
+    {
+      "fractional_coverage_gap_per_n": "150311815617/12500000000000000",
+      "id": "predecessor_original_budget",
+      "integer_packing_coverage_margin_at_Jmax": "81250204541/3125000000000000",
+      "largest_strictly_fitting_integer_J": 17,
+      "n_useful_probability_at_least_half": 199879587,
+      "useful_failure_dyadic_upper_at_sizes": {
+        "100000000": "2^(-1)",
+        "10000000000": "2^(-100)",
+        "1000000000000": "2^(-10006)"
+      },
+      "useful_probability_at_sizes": {
+        "100000000": "39086032350335361/58617282350335361",
+        "10000000000": "39086032350335361/39281344850335361",
+        "1000000000000": "39086032350335361/39087985475335361"
+      }
+    },
+    {
+      "fractional_coverage_gap_per_n": "1600000637697/1000000000000000000",
+      "id": "fractional_fixed_multipliers",
+      "integer_packing_coverage_margin_at_Jmax": "-155342988206051/1000000000000000000",
+      "largest_strictly_fitting_integer_J": 17,
+      "n_useful_probability_at_least_half": 11285535926,
+      "useful_failure_dyadic_upper_at_sizes": {
+        "100000000": "2^(-0)",
+        "10000000000": "2^(-1)",
+        "1000000000000": "2^(-177)"
+      },
+      "useful_probability_at_sizes": {
+        "100000000": "221522449952470491/6471522449952470491",
+        "10000000000": "443044976580212391/568044976580212391",
+        "1000000000000": "443044976580212391/444294976580212391"
+      }
+    },
+    {
+      "fractional_coverage_gap_per_n": "1600000637697/1000000000000000000",
+      "id": "fractional_retuned",
+      "integer_packing_coverage_margin_at_Jmax": "-155342988206051/1000000000000000000",
+      "largest_strictly_fitting_integer_J": 17,
+      "n_useful_probability_at_least_half": 11285535926,
+      "useful_failure_dyadic_upper_at_sizes": {
+        "100000000": "2^(-0)",
+        "10000000000": "2^(-1)",
+        "1000000000000": "2^(-177)"
+      },
+      "useful_probability_at_sizes": {
+        "100000000": "221522449952470491/6471522449952470491",
+        "10000000000": "443044976580212391/568044976580212391",
+        "1000000000000": "443044976580212391/444294976580212391"
+      }
+    }
+  ],
+  "positive_support_controls": 4096,
+  "positive_toy": {
+    "N0": 256,
+    "d": "3/25",
+    "delta": "13/100",
+    "largest_strictly_fitting_J": 3,
+    "m": 4,
+    "n": 14,
+    "old_coverage_margin": "-3/350",
+    "original_weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      15,
+      30,
+      60,
+      120,
+      240,
+      480,
+      960
+    ],
+    "rho": "2/7",
+    "scope": "A finite coverage-interface control, not a complete algorithm parameter tuple.",
+    "tie_weights": "all one",
+    "transformed_weights": [
+      3586,
+      3586,
+      3586,
+      3586,
+      3586,
+      3586,
+      3586,
+      53776,
+      107551,
+      215101,
+      430201,
+      860401,
+      1720801,
+      3441601
+    ],
+    "uniform_useful_restriction_probability": "1"
+  },
+  "scope": "Exact finite controls and component cutoffs; the written all-size proof needs review.",
+  "sharpness": {
+    "exact_support_cases": 4096,
+    "expected_deficiency": "q*zero_count/n",
+    "family": "zero weights and distinct powers of two",
+    "hypergeometric_cases": 818,
+    "normalized_inequality": "equality"
+  },
+  "status": "PASS",
+  "superadditivity_counterexample": {
+    "claimed_fractional_upper": "3/5",
+    "function": "floor(|U|/3)",
+    "h": 5,
+    "meaning": "The new sumset lemma does not follow from superadditivity and exchange bounds alone.",
+    "q": 3,
+    "small_expectation": "1"
+  }
+}
