@@ -1,0 +1,112 @@
+{
+  "author": "conorholds",
+  "candidate_id": "asymmetric_degree20_retuned",
+  "combined_cutoff": {
+    "arithmetic_uniform_conditions": {
+      "cap_exponent_at_most_n": true,
+      "evaluation_error": true,
+      "rounding_error": true,
+      "uniform_quadratic_bound": true
+    },
+    "checks": {
+      "arithmetic": true,
+      "coupling": true,
+      "coverage_caps": true,
+      "sampling": true
+    },
+    "combined_failure_at_most": "2^-128",
+    "coupling_failure_bits_at_least_at_cutoff": 971334446112864535459730953411759453321203419526069760621059115810793903630059820855,
+    "coupling_uniform_conditions": {
+      "coupling_tail": true,
+      "cubic_dominates_linear": true
+    },
+    "each_random_failure_at_most": "2^-130",
+    "evaluation_error_bits_at_least_at_cutoff": 196159429230833773869868419440890522557789360644575895106,
+    "n": 9903520314283042199192993792,
+    "ordinary_uniform_call_count_log2_at_most": 4847089058658238972544428233,
+    "partition": {
+      "larger_blocks": 2764654346,
+      "maximum": 2006670879280875982,
+      "minimum": 2006670879280875981,
+      "q": 4935298766
+    },
+    "per_target_arithmetic_error_at_most": "1/16",
+    "per_target_total_error_at_most": "1/8",
+    "power": 93,
+    "proposed_contribution_fractional_bits": 4847337438947721191242783810,
+    "proposed_coupling_failure_bits_at_least": 223,
+    "proposed_evaluation_error_bits_at_least": 5,
+    "proposed_rounding_error_bits_at_least": 5,
+    "proposed_uniform_rejection_cap": 4847089058658238972544428456,
+    "proposed_unit_phase_accuracy_bits": 34349052945409246994925183427,
+    "rounding_error_bits_at_least_at_cutoff": 98079714615416886934934209732772450312651582628507755459,
+    "status": "PASS",
+    "target_degree": 2,
+    "three_failure_terms": "3*2^-130",
+    "uniform_rejections_per_call": 971334446112864535459730953411759453321203419526069760625906204869452142602604249088
+  },
+  "inputs_sha256": {
+    "../checksum-variance/FINITE-INPUT.json": "2511346969be5f5989e35ef1557e3a1337ebea2aa2bb6e264512f856341bf2ef",
+    "../checksum-variance/finite_circle.py": "372c678d06a48fe6e9d0fe21a8eae7da2082ee422b6341b3c01c6700bb2dbce8",
+    "INPUTS.json": "4cf77a44ff46a7ab1b5ecd0d3a89c8888f61ef14a04058cd03a5e856255e0bd8",
+    "coverage_bounds.py": "966e144a398ca981ce82e6f854dede9d962d637431e615a1b26f2f648aefcc7a",
+    "implementation_bounds.py": "601bcde5927487a671e8ed706e93e5bba0a460a721254827c672ef3a67b08c30"
+  },
+  "probability_cutoff": {
+    "arithmetic_uniform_conditions": {
+      "cap_exponent_at_most_n": true,
+      "evaluation_error": true,
+      "rounding_error": true,
+      "uniform_quadratic_bound": true
+    },
+    "checks": {
+      "arithmetic": true,
+      "coupling": true,
+      "coverage_caps": true,
+      "sampling": true
+    },
+    "combined_failure_at_most": "2^-128",
+    "coupling_failure_bits_at_least_at_cutoff": 12259964326927110866866776217202473429909105571149108301,
+    "coupling_uniform_conditions": {
+      "coupling_tail": true,
+      "cubic_dominates_linear": true
+    },
+    "each_random_failure_at_most": "2^-130",
+    "evaluation_error_bits_at_least_at_cutoff": 10633823966279326975232944376062275182,
+    "n": 2305843009213693952,
+    "ordinary_uniform_call_count_log2_at_most": 39040807406319709107,
+    "partition": {
+      "larger_blocks": 0,
+      "maximum": 2305843009213693952,
+      "minimum": 2305843009213693952,
+      "q": 1
+    },
+    "per_target_arithmetic_error_at_most": "1/16",
+    "per_target_total_error_at_most": "1/8",
+    "power": 61,
+    "proposed_contribution_fractional_bits": 1128608695917697892,
+    "proposed_coupling_failure_bits_at_least": 191,
+    "proposed_evaluation_error_bits_at_least": 5,
+    "proposed_rounding_error_bits_at_least": 5,
+    "proposed_uniform_rejection_cap": 39040807406319709298,
+    "proposed_unit_phase_accuracy_bits": 7997512106180481431,
+    "rounding_error_bits_at_least_at_cutoff": 5316911983139663490486619545203680417,
+    "status": "PASS",
+    "target_degree": 2,
+    "three_failure_terms": "3*2^-130",
+    "uniform_rejections_per_call": 12259964326927110866866776217202473468949912977468817408
+  },
+  "scope": "Checksum-only error and exponential overhead bounds, conditional on the retained filtering and deterministic evaluator proofs; no full operation-count or Subset Sum cutoff.",
+  "status": "PASS",
+  "table_and_pattern_overhead_cutoff": {
+    "allowed_overhead": "38685626227668133590597632/390625",
+    "envelope": {
+      "constant": "424693112348631181422713993183/6250000000",
+      "log_coefficient": "1058203205763/625",
+      "sqrt_coefficient": "6716601602569/31250000000"
+    },
+    "envelope_at_cutoff_at_most": "2124133978893027872025058047819/31250000000",
+    "n": 9903520314283042199192993792,
+    "power": 93
+  }
+}

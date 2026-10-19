@@ -1,0 +1,131 @@
+{
+  "author": "conorholds",
+  "candidate_id": "asymmetric_degree20_retuned",
+  "constants": {
+    "concentration_blocks": [
+      2006670879202202015,
+      809923614872995342,
+      801885223128037735
+    ],
+    "d_bound": "529101601319/31250000000",
+    "epsilon": "1/100000000",
+    "eta": "25923047/50000000",
+    "grid_counts": [
+      6772500498,
+      7026149213,
+      6991195439
+    ],
+    "grid_step": "1/400000000",
+    "high_width": "4391343256022486658359951/500000000000000000000000",
+    "likelihood_width": "2116406404651/125000000000",
+    "low_width": "4369497146419977582846581/500000000000000000000000",
+    "minimum_block_size": 2006670879202202015,
+    "pattern_bits_per_block": 99
+  },
+  "failure_probability_at_most": "2^-128",
+  "ideal_checksum": {
+    "checks": {
+      "finite_circle": true,
+      "positive_draw_exponent": true,
+      "sampling_growth": true,
+      "sampling_initial": true
+    },
+    "combined_failure_at_most": "2^-127",
+    "sampling_decay": "311/12500000",
+    "sampling_exponent": "12235773/25000000",
+    "sampling_failure_at_most": "2^-128",
+    "status": "PASS",
+    "target_degree": 1,
+    "tolerance": "1/16"
+  },
+  "inputs_sha256": {
+    "../checksum-variance/FINITE-INPUT.json": "2511346969be5f5989e35ef1557e3a1337ebea2aa2bb6e264512f856341bf2ef",
+    "../checksum-variance/finite_circle.py": "372c678d06a48fe6e9d0fe21a8eae7da2082ee422b6341b3c01c6700bb2dbce8",
+    "INPUTS.json": "4cf77a44ff46a7ab1b5ecd0d3a89c8888f61ef14a04058cd03a5e856255e0bd8",
+    "coverage_bounds.py": "966e144a398ca981ce82e6f854dede9d962d637431e615a1b26f2f648aefcc7a"
+  },
+  "partitions": {
+    "minimum-block": {
+      "at_cutoff": {
+        "cap_failure_bits_at_least": "54043195487820952/390625",
+        "checks": {
+          "caps": true,
+          "concentration": true,
+          "coverage": true
+        },
+        "coverage_outer_exponent": "18014398507919484/390625",
+        "coverage_required_exponent": 61,
+        "n": 2305843009213693952,
+        "partition": {
+          "larger_blocks": 0,
+          "maximum": 2305843009213693952,
+          "minimum": 2305843009213693952,
+          "q": 1
+        },
+        "pattern_overhead_bits": 99,
+        "per_digit_table_scan_bits_at_most": "9531447120683522676677757521/244140625",
+        "status": "PASS"
+      },
+      "n": 2305843009213693952,
+      "power": 61,
+      "previous_power_conditions": {
+        "cap_density": true,
+        "cap_tail": true,
+        "concentration": false,
+        "coverage_tail": true,
+        "partition_growth": true,
+        "partition_logarithm": true
+      },
+      "uniform_conditions": {
+        "cap_density": true,
+        "cap_tail": true,
+        "concentration": true,
+        "coverage_tail": true,
+        "partition_growth": true,
+        "partition_logarithm": true
+      }
+    },
+    "square-root": {
+      "at_cutoff": {
+        "cap_failure_bits_at_least": "124615124514763870537321991899719804/390625",
+        "checks": {
+          "caps": true,
+          "concentration": true,
+          "coverage": true
+        },
+        "coverage_outer_exponent": "18014398507919484/390625",
+        "coverage_required_exponent": 122,
+        "n": 5316911983139663491615228241121378304,
+        "partition": {
+          "larger_blocks": 0,
+          "maximum": 2305843009213693952,
+          "minimum": 2305843009213693952,
+          "q": 2305843009213693952
+        },
+        "pattern_overhead_bits": 228278457912155701248,
+        "per_digit_table_scan_bits_at_most": "9531447120683522691570335646/244140625",
+        "status": "PASS"
+      },
+      "n": 5316911983139663491615228241121378304,
+      "power": 122,
+      "previous_power_conditions": {
+        "cap_density": true,
+        "cap_tail": true,
+        "concentration": false,
+        "coverage_growth": true,
+        "coverage_initial": true,
+        "coverage_tail": true
+      },
+      "uniform_conditions": {
+        "cap_density": true,
+        "cap_tail": true,
+        "concentration": true,
+        "coverage_growth": true,
+        "coverage_initial": true,
+        "coverage_tail": true
+      }
+    }
+  },
+  "scope": "Coverage, multiplicity and simultaneous caps, composed with the preceding ideal checksum MSE; excludes finite arithmetic and a practical runtime cutoff.",
+  "status": "PASS"
+}

@@ -1,0 +1,330 @@
+{
+  "author": "conorholds",
+  "canonical_main": "f25a303525df636c079e6a7c574527cccf56e611",
+  "mathematical_source": {
+    "repository": "https://github.com/openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "live_main_checked_utc": "2026-10-15T10:41:56.813507+00:00",
+    "live_main_sha": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "license": "Apache-2.0",
+    "attribution": "The original algorithm, filtering architecture, source coefficients and proofs are OpenAI's. This package rederives a conditional numerical budget model and supplies new filter coefficients, parameter witnesses and independent interval calculations.",
+    "files": [
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/aliases.tex",
+        "sha256": "828e8ef5b3173a4e0a9818679ad658e291ef7f2a3cbe56334a12a271f88b2e5f",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/aliases.tex"
+      },
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/checksum.tex",
+        "sha256": "3c0d8f4ae1810e420c4a1e2ee098e4878e9ad39c152c5395eb7ab273078d9818",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/checksum.tex"
+      },
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/filtering.tex",
+        "sha256": "17443991a51fa09b86c8523ec4cada86cb32833d37b9e9fef0b38b56eb814b8e",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/filtering.tex"
+      },
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/implementation.tex",
+        "sha256": "ef78713f1e782ccb8c0360aa2ff68e0145cef9105371423e2617215d0d6e3aea",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/implementation.tex"
+      },
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/introduction.tex",
+        "sha256": "583a20059e520cff2aa5d99c5c7a457da6d6deae83a664813cc2b474a1920376",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/introduction.tex"
+      },
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/numerical.tex",
+        "sha256": "a4cc12248568d90368197466f562944f119b8f68535f72c576dd2f342b33b6dd",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/numerical.tex"
+      },
+      {
+        "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex",
+        "sha256": "7a5681c2a0ec43838737d517978a49d6b2d68125f6419526a00d053a283c00ba",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex"
+      }
+    ]
+  },
+  "source_manifest_sha256": "d9b365d6d538e7337138804b9b667d1e4ed7f402626b088c342ff114aee92c3d",
+  "parameter_sources": [
+    {
+      "repository": "conorholds/subset-sum-bounds",
+      "commit": "f25a303525df636c079e6a7c574527cccf56e611",
+      "path": "research/filter-budgets/witnesses.json",
+      "sha256": "fb15335d28bf8237ce1cf474a065650e74fdc2493344afce0fc39cea224982cd"
+    },
+    {
+      "repository": "conorholds/subset-sum-bounds",
+      "commit": "0eedec737c9cc1911e3d11c4128f889d73216317",
+      "path": "research/chernoff-multipliers/candidates.json",
+      "sha256": "b19040620b313e48967ec0cdbfc530791ac1d3d6af77502ea21392d96e70f0b0"
+    },
+    {
+      "repository": "conorholds/subset-sum-bounds",
+      "commit": "7753e27f62643dd8510471fd140c56dc01633081",
+      "path": "research/fractional-coverage/candidates.json",
+      "sha256": "3dcbbc66450fcb3963a737a4b0b46f3233ece23ce9db004a346db366c32c6453"
+    },
+    {
+      "repository": "conorholds/subset-sum-bounds",
+      "commit": "7753e27f62643dd8510471fd140c56dc01633081",
+      "path": "research/asymmetric-filters/candidates.json",
+      "sha256": "15c6241bd166fea78206d3011835aa2e74900c9561cafb25f6f57df9dd195881"
+    }
+  ],
+  "parameter_witnesses": [
+    {
+      "id": "filter-budgets/source",
+      "source": "filter-budgets/witnesses.json",
+      "parameters": {
+        "eta": "0.51772",
+        "tau": "0.48996",
+        "epsilon": "0.00000001",
+        "moment_ceiling": "0.5169",
+        "alpha": "0.49"
+      },
+      "multipliers": [
+        "8.5",
+        "8.3"
+      ]
+    },
+    {
+      "id": "filter-budgets/parameters_only",
+      "source": "filter-budgets/witnesses.json",
+      "parameters": {
+        "eta": "0.51786",
+        "tau": "0.48980",
+        "epsilon": "0.00000001",
+        "moment_ceiling": "0.5177",
+        "alpha": "0.48981"
+      },
+      "multipliers": [
+        "8.5",
+        "8.3"
+      ]
+    },
+    {
+      "id": "filter-budgets/filter_only",
+      "source": "filter-budgets/witnesses.json",
+      "parameters": {
+        "eta": "0.51772",
+        "tau": "0.48996",
+        "epsilon": "0.00000001",
+        "moment_ceiling": "0.5169",
+        "alpha": "0.49"
+      },
+      "multipliers": [
+        "8.5",
+        "8.3"
+      ]
+    },
+    {
+      "id": "filter-budgets/combined",
+      "source": "filter-budgets/witnesses.json",
+      "parameters": {
+        "eta": "0.51800",
+        "tau": "0.48975",
+        "epsilon": "0.00000001",
+        "moment_ceiling": "0.5179",
+        "alpha": "0.48976"
+      },
+      "multipliers": [
+        "8.5",
+        "8.3"
+      ]
+    },
+    {
+      "id": "chernoff-multipliers/predecessor_degree14",
+      "source": "chernoff-multipliers/candidates.json",
+      "parameters": {
+        "eta": "0.51798422",
+        "tau": "0.48972396",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51788422",
+        "alpha": "0.48973396"
+      },
+      "multipliers": [
+        "8.5",
+        "8.3"
+      ]
+    },
+    {
+      "id": "chernoff-multipliers/multipliers_only",
+      "source": "chernoff-multipliers/candidates.json",
+      "parameters": {
+        "eta": "0.51798422",
+        "tau": "0.48972396",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51788422",
+        "alpha": "0.48973396"
+      },
+      "multipliers": [
+        "8.557599143",
+        "8.361975648"
+      ]
+    },
+    {
+      "id": "chernoff-multipliers/multipliers_retuned",
+      "source": "chernoff-multipliers/candidates.json",
+      "parameters": {
+        "eta": "0.51798718",
+        "tau": "0.48972227",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51788718",
+        "alpha": "0.48973227"
+      },
+      "multipliers": [
+        "8.557374838",
+        "8.361708555"
+      ]
+    },
+    {
+      "id": "chernoff-multipliers/joint_degree14_retuned",
+      "source": "chernoff-multipliers/candidates.json",
+      "parameters": {
+        "eta": "0.51799737",
+        "tau": "0.48971644",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789737",
+        "alpha": "0.48972644"
+      },
+      "multipliers": [
+        "8.770105351",
+        "8.568922520"
+      ]
+    },
+    {
+      "id": "chernoff-multipliers/joint_degree20_retuned",
+      "source": "chernoff-multipliers/candidates.json",
+      "parameters": {
+        "eta": "0.51799740",
+        "tau": "0.48971642",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789740",
+        "alpha": "0.48972642"
+      },
+      "multipliers": [
+        "8.770338411",
+        "8.569132810"
+      ]
+    },
+    {
+      "id": "fractional-coverage/predecessor_original_budget",
+      "source": "fractional-coverage/candidates.json",
+      "parameters": {
+        "eta": "0.51799740",
+        "tau": "0.48971642",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789740",
+        "alpha": "0.48972642"
+      },
+      "multipliers": [
+        "8.770338411",
+        "8.569132810"
+      ]
+    },
+    {
+      "id": "fractional-coverage/fractional_fixed_multipliers",
+      "source": "fractional-coverage/candidates.json",
+      "parameters": {
+        "eta": "0.51799027",
+        "tau": "0.48971043",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789027",
+        "alpha": "0.48972043"
+      },
+      "multipliers": [
+        "8.770338411",
+        "8.569132810"
+      ]
+    },
+    {
+      "id": "fractional-coverage/fractional_retuned",
+      "source": "fractional-coverage/candidates.json",
+      "parameters": {
+        "eta": "0.51799027",
+        "tau": "0.48971043",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789027",
+        "alpha": "0.48972043"
+      },
+      "multipliers": [
+        "8.770359225628",
+        "8.569494740152"
+      ]
+    },
+    {
+      "id": "asymmetric-filters/even_predecessor",
+      "source": "asymmetric-filters/candidates.json",
+      "parameters": {
+        "eta": "0.51799027",
+        "tau": "0.48971043",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789027",
+        "alpha": "0.48972043"
+      },
+      "multipliers": [
+        "8.770338411",
+        "8.569132810"
+      ]
+    },
+    {
+      "id": "asymmetric-filters/asymmetric_filter_only",
+      "source": "asymmetric-filters/candidates.json",
+      "parameters": {
+        "eta": "0.51799027",
+        "tau": "0.48971043",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51789027",
+        "alpha": "0.48972043"
+      },
+      "multipliers": [
+        "8.770338411",
+        "8.569132810"
+      ]
+    },
+    {
+      "id": "asymmetric-filters/asymmetric_projection_retuned",
+      "source": "asymmetric-filters/candidates.json",
+      "parameters": {
+        "eta": "0.51823678",
+        "tau": "0.48957698",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51813678",
+        "alpha": "0.48958698"
+      },
+      "multipliers": [
+        "8.770338411",
+        "8.569132810"
+      ]
+    },
+    {
+      "id": "asymmetric-filters/asymmetric_degree20_retuned",
+      "source": "asymmetric-filters/candidates.json",
+      "parameters": {
+        "eta": "0.51846094",
+        "tau": "0.48945580",
+        "epsilon": ".00000001",
+        "moment_ceiling": "0.51836094",
+        "alpha": "0.48946580"
+      },
+      "multipliers": [
+        "8.388021115522",
+        "8.198434389248"
+      ]
+    }
+  ],
+  "scope": "Parameter-only checksum audit snapshots; original interval evidence remains in each pinned predecessor. No new filtering certificate.",
+  "overlap": {
+    "checked_utc": "2026-10-19T14:22:20.692597+00:00",
+    "open_research_prs": [
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "scope": "Compressed frequency match indexing and original-law checksum variance; distinct from alias subset-pair costs and filter optimization."
+  }
+}
