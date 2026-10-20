@@ -1,0 +1,40 @@
+{
+  "source_path": "research/filter-budgets/witnesses.json",
+  "source_sha256": "fb15335d28bf8237ce1cf474a065650e74fdc2493344afce0fc39cea224982cd",
+  "candidate": {
+    "id": "source",
+    "design": {
+      "r": [
+        "0.851",
+        "0.466",
+        "0.325",
+        "0.253",
+        "0.224",
+        "-0.314"
+      ],
+      "s": [
+        "1.281",
+        "-0.938",
+        "0.731",
+        "-0.559",
+        "0.391",
+        "0.110"
+      ],
+      "kappa": "1.0315"
+    },
+    "parameters": {
+      "eta": "0.51772",
+      "tau": "0.48996",
+      "rho": "0.0567",
+      "blocks": 17,
+      "deficiency": "0.01004",
+      "local_deficiency": "0.0106",
+      "gamma": "0.48925",
+      "guard": "0.00001",
+      "preliminary": "0.489985",
+      "alpha": "0.49",
+      "epsilon": "0.00000001",
+      "moment_ceiling": "0.5169"
+    }
+  }
+}

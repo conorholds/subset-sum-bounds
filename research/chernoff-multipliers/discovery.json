@@ -1,0 +1,49 @@
+{
+  "status": "EXPLORATORY",
+  "author": "conorholds",
+  "predecessor_sha256": "77e094bb89446dd2d295d2da975d5172ffc2d89f65fd2322224d6dab71b0110a",
+  "search_sha256": "d03e9f91e56c96d2392c0fd76f8dc3816501042d123f54d51ae22db119b60e23",
+  "inputs_sha256": {
+    "filters.py": "88891ab69176cb49d7f9026ecb29a62a746717d4490e9cb4bb429947ce8dd768",
+    "certify.py": "bed223aaa4f7aca80f2a9e634a2b106347c02c77504339ffd535e4ad90befe3e",
+    "SOURCE.json": "d9b365d6d538e7337138804b9b667d1e4ed7f402626b088c342ff114aee92c3d"
+  },
+  "limits": {
+    "points": 256,
+    "frontier_bisections": 45,
+    "multiplier_iterations": 60,
+    "eta": [
+      ".5179",
+      ".5181"
+    ],
+    "domination_rounding_budget": "29.99"
+  },
+  "frontier_bracket": [
+    0.517987189688953,
+    0.5179871896889531
+  ],
+  "moment_evaluations": 6174,
+  "parameters": {
+    "eta": "0.51798718",
+    "tau": "0.48972227",
+    "rho": "0.05777206",
+    "blocks": 17,
+    "deficiency": "0.01029773",
+    "local_deficiency": "0.0105116251",
+    "gamma": "0.4894583749",
+    "guard": ".00001",
+    "preliminary": "0.48971227",
+    "alpha": "0.48973227",
+    "epsilon": ".00000001",
+    "moment_ceiling": "0.51788718"
+  },
+  "multipliers": [
+    "8.557374838",
+    "8.361708555"
+  ],
+  "runtime": {
+    "python": "3.14.3",
+    "numpy": "2.5.1"
+  },
+  "seconds": 0.7874266668222845
+}
