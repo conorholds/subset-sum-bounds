@@ -1,14 +1,14 @@
-"""Route the isolated checksum audit's exact tests through make check."""
-import importlib.util
+"""Run checksum controls without sharing another package's audit module."""
 from pathlib import Path
+import subprocess
 import sys
+import unittest
 
-PACKAGE = Path(__file__).resolve().parents[1]/'research/checksum-variance'
+ROOT = Path(__file__).resolve().parents[1]
+PATH = ROOT/'research/checksum-variance/test_package.py'
 
 
-def load_tests(loader, tests, pattern):
-    sys.path.insert(0, str(PACKAGE))
-    spec = importlib.util.spec_from_file_location('checksum_variance_tests', PACKAGE/'test_package.py')
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return loader.loadTestsFromModule(module)
+class ChecksumVarianceTests(unittest.TestCase):
+    def test_package_in_an_isolated_interpreter(self):
+        subprocess.run([sys.executable, '-B', str(PATH)], cwd=ROOT,
+                       check=True, timeout=120)
