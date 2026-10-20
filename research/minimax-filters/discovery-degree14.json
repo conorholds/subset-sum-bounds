@@ -1,0 +1,119 @@
+{
+  "status": "EXPLORATORY",
+  "scope": "Bounded floating-point search; separate interval replay required.",
+  "degree": 14,
+  "parameters": {
+    "eta": "0.5179812",
+    "tau": "0.4897258",
+    "rho": "0.0577528",
+    "blocks": 17,
+    "deficiency": "0.0102942",
+    "local_deficiency": "0.010511536",
+    "gamma": "0.489458464",
+    "guard": ".00001",
+    "preliminary": "0.4897158",
+    "alpha": "0.4897358",
+    "epsilon": ".00000001",
+    "moment_ceiling": "0.5178812"
+  },
+  "temperatures": [
+    0.001,
+    0.0001,
+    1e-05,
+    1e-06
+  ],
+  "limits": {
+    "evaluations": 12000,
+    "iterations_per_stage": 200,
+    "line_search_trials": 24,
+    "coefficient_displacement": ".35",
+    "kappa": [
+      ".95",
+      "1.12"
+    ]
+  },
+  "evaluations": 353,
+  "stages": [
+    {
+      "temperature": 0.001,
+      "accepted_steps": 72,
+      "max_log2_moment": 0.5180046915834788,
+      "evaluations_so_far": 99
+    },
+    {
+      "temperature": 0.0001,
+      "accepted_steps": 59,
+      "max_log2_moment": 0.5178562310168955,
+      "evaluations_so_far": 184
+    },
+    {
+      "temperature": 1e-05,
+      "accepted_steps": 48,
+      "max_log2_moment": 0.5178411094789368,
+      "evaluations_so_far": 272
+    },
+    {
+      "temperature": 1e-06,
+      "accepted_steps": 29,
+      "max_log2_moment": 0.5178395944703906,
+      "evaluations_so_far": 352
+    }
+  ],
+  "starting_log2_moments": [
+    0.5178616338063344,
+    0.5178794956068833
+  ],
+  "candidate_log2_moments": [
+    0.5178393346733623,
+    0.5178394857783113
+  ],
+  "design": {
+    "r": [
+      "0.829698027",
+      "0.464618623",
+      "0.333342214",
+      "0.258889780",
+      "0.229690510",
+      "-0.260989901",
+      "-0.152293068",
+      "-0.084740995",
+      "0.068026958",
+      "0.037805529",
+      "0.020190603",
+      "0.003633319",
+      "-0.003703135",
+      "-0.005301602"
+    ],
+    "s": [
+      "1.276337629",
+      "-0.921455065",
+      "0.700496905",
+      "-0.523909397",
+      "0.352915583",
+      "0.124358301",
+      "-0.129046444",
+      "0.097949231",
+      "0.013557314",
+      "-0.002818659",
+      "-0.005862885",
+      "-0.002247214",
+      "0.004782698",
+      "-0.004495398"
+    ],
+    "kappa": "1.035399370"
+  },
+  "runtime": {
+    "python": "3.14.3",
+    "numpy": "2.5.1"
+  },
+  "optimizer_sha256": "e7d4abf4fd01c3a6061a9cb356f6714eeb294e5721f9c487efe0c9c482719ec3",
+  "inputs_sha256": {
+    "filters.py": "88891ab69176cb49d7f9026ecb29a62a746717d4490e9cb4bb429947ce8dd768",
+    "verify.py": "57e126e8dd2166820a5c984e286309d196700347daf7b7aaa35684f3b16781f1",
+    "certify.py": "bed223aaa4f7aca80f2a9e634a2b106347c02c77504339ffd535e4ad90befe3e",
+    "SOURCE.json": "d9b365d6d538e7337138804b9b667d1e4ed7f402626b088c342ff114aee92c3d",
+    "witnesses.json": "fb15335d28bf8237ce1cf474a065650e74fdc2493344afce0fc39cea224982cd"
+  },
+  "baseline_sha256": "d107a8ee08a04125a9057e366b4cf094ad2b38c434e18cde04035b492884cedf",
+  "seconds": 0.2144748750142753
+}
