@@ -1,12 +1,14 @@
-"""Include the deficiency-interface proof controls in the project test router."""
-import importlib.util
+"""Run deficiency controls without sharing another package's audit module."""
 from pathlib import Path
+import subprocess
+import sys
+import unittest
 
-PATH = Path(__file__).resolve().parents[1]/'research/deficiency-interface/test_package.py'
-SPEC = importlib.util.spec_from_file_location('deficiency_interface_controls', PATH)
-MODULE = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(MODULE)
+ROOT = Path(__file__).resolve().parents[1]
+PATH = ROOT/'research/deficiency-interface/test_package.py'
 
 
-def load_tests(loader, tests, pattern):
-    return loader.loadTestsFromModule(MODULE)
+class DeficiencyInterfaceTests(unittest.TestCase):
+    def test_package_in_an_isolated_interpreter(self):
+        subprocess.run([sys.executable, '-B', str(PATH)], cwd=ROOT,
+                       check=True, timeout=120)
