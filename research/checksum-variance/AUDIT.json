@@ -1,0 +1,246 @@
+{
+  "author": "conorholds",
+  "budget_profiles": [
+    {
+      "continuous_ceiling": "5169/10000",
+      "finite_ceiling": "1616593/3125000",
+      "first_rounding_margin": "9/2",
+      "id": "filter-budgets/source",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "358897/115550",
+      "variance_decay": "2561/6250000"
+    },
+    {
+      "continuous_ceiling": "5177/10000",
+      "finite_ceiling": "6472247/12500000",
+      "first_rounding_margin": "9/2",
+      "id": "filter-budgets/parameters_only",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "711641/230870",
+      "variance_decay": "997/12500000"
+    },
+    {
+      "continuous_ceiling": "5169/10000",
+      "finite_ceiling": "1616593/3125000",
+      "first_rounding_margin": "9/2",
+      "id": "filter-budgets/filter_only",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "358897/115550",
+      "variance_decay": "2561/6250000"
+    },
+    {
+      "continuous_ceiling": "5179/10000",
+      "finite_ceiling": "1618593/3125000",
+      "first_rounding_margin": "9/2",
+      "id": "filter-budgets/combined",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "5663/1846",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "25894211/50000000",
+      "finite_ceiling": "25896699/50000000",
+      "first_rounding_margin": "9/2",
+      "id": "chernoff-multipliers/predecessor_degree14",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "707612119/230731850",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "25894211/50000000",
+      "finite_ceiling": "25896699/50000000",
+      "first_rounding_margin": "4327202571/1000000000",
+      "id": "chernoff-multipliers/multipliers_only",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "2066281110605427/721037031250000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "25894359/50000000",
+      "finite_ceiling": "25896847/50000000",
+      "first_rounding_margin": "2163937743/500000000",
+      "id": "chernoff-multipliers/multipliers_retuned",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "2204388627246059/769095600000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "51789737/100000000",
+      "finite_ceiling": "51794713/100000000",
+      "first_rounding_margin": "3689683947/1000000000",
+      "id": "chernoff-multipliers/joint_degree14_retuned",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "101170150864577/46143551000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "2589487/5000000",
+      "finite_ceiling": "12948679/25000000",
+      "first_rounding_margin": "3688984767/1000000000",
+      "id": "chernoff-multipliers/joint_degree20_retuned",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "632115374831141/288397150000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "2589487/5000000",
+      "finite_ceiling": "12948679/25000000",
+      "first_rounding_margin": "3688984767/1000000000",
+      "id": "fractional-coverage/predecessor_original_budget",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "632115374831141/288397150000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "51789027/100000000",
+      "finite_ceiling": "51794003/100000000",
+      "first_rounding_margin": "3688984767/1000000000",
+      "id": "fractional-coverage/fractional_fixed_multipliers",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "10114028558578247/4614305900000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "51789027/100000000",
+      "finite_ceiling": "51794003/100000000",
+      "first_rounding_margin": "922230580779/250000000000",
+      "id": "fractional-coverage/fractional_retuned",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "12635761220249216353/5767882375000000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "51789027/100000000",
+      "finite_ceiling": "51794003/100000000",
+      "first_rounding_margin": "3688984767/1000000000",
+      "id": "asymmetric-filters/even_predecessor",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "10114028558578247/4614305900000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "51789027/100000000",
+      "finite_ceiling": "51794003/100000000",
+      "first_rounding_margin": "3688984767/1000000000",
+      "id": "asymmetric-filters/asymmetric_filter_only",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "10114028558578247/4614305900000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "25906839/50000000",
+      "finite_ceiling": "25909327/50000000",
+      "first_rounding_margin": "3688984767/1000000000",
+      "id": "asymmetric-filters/asymmetric_projection_retuned",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "4980876402379103/2304585900000000",
+      "variance_decay": "311/6250000"
+    },
+    {
+      "continuous_ceiling": "25918047/50000000",
+      "finite_ceiling": "5184107/10000000",
+      "first_rounding_margin": "2417968326717/500000000000",
+      "id": "asymmetric-filters/asymmetric_degree20_retuned",
+      "pattern_factor_in_mse": 1,
+      "prefactor_upper_bound": 8,
+      "second_rounding_margin": "300275248935229209/89931769531250000",
+      "variance_decay": "311/6250000"
+    }
+  ],
+  "campaign": "full",
+  "finite_campaign": {
+    "configurations": 163120,
+    "covered_configurations": 49910,
+    "fourier_target_controls": 655120,
+    "independent_joint_draw_controls": 184,
+    "literal_matches": 677854,
+    "out_of_range_matches": 6906,
+    "pattern_second_moments": 326240,
+    "trace_sha256": "3c59b193a8308d4851f52395245e1f196d6da4ddcfd62d52a5861baf9b0f40e1"
+  },
+  "independent_pattern_control": {
+    "independent_mean_squared_error": "3/2",
+    "own_frequency_sets": [
+      [
+        0
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "reused_rank_mean_squared_error": "2",
+    "target": 2,
+    "total_exact_checksum": [
+      "0",
+      "0"
+    ]
+  },
+  "inputs_sha256": {
+    "INPUTS.json": "3f1530219d0dcc7c24934cbfa7bad0a463224c767170b647b9e4ff0218863353",
+    "audit.py": "6d3da3743bf645708d8b0c01cb337bf4f71374fba35aea084e267c814eff4c5e",
+    "oracle.py": "76085bdc1204ff9a0e981349390b67308e63c9e935accf14fe1fb35fcb0c00fc",
+    "reference.py": "2586e05f569c6c9991bcd48c82f7fe8fd3f5d713100a5210eb4730dbeb17aeaf"
+  },
+  "multiplicity_control": {
+    "correct_mean": [
+      "1",
+      "0"
+    ],
+    "inconsistent_label_deduplication_mean": [
+      "15/8",
+      "-1/8"
+    ],
+    "matches": 9,
+    "multiplicities": [
+      2,
+      3,
+      2,
+      2
+    ],
+    "omitted_multiplicity_mean": [
+      "9/4",
+      "1/4"
+    ],
+    "one_draw_variance": "17/16",
+    "uniform_group_instead_of_match_mean": [
+      "15/16",
+      "3/16"
+    ]
+  },
+  "phase_conditioning_control": {
+    "coverage_conditioned_amplitude_second_moment": "4",
+    "coverage_conditioned_joint_score_moment": "9/4",
+    "coverage_probability": "1/4",
+    "unconditional_amplitude_second_moment": "2",
+    "unconditional_joint_score_moment": "1",
+    "uncovered_nonzero_bias": [
+      {
+        "bias": [
+          "-2",
+          "0"
+        ],
+        "phase": 0,
+        "shift": 1
+      }
+    ]
+  },
+  "scope": "Exact finite checksum controls and symbolic conditional variance budgets; no algorithmic record.",
+  "status": "PASS"
+}

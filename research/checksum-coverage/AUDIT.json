@@ -1,0 +1,40 @@
+{
+  "author": "conorholds",
+  "cases": 9,
+  "fixture": {
+    "alpha_values": [
+      "1/4",
+      "1/2",
+      "1"
+    ],
+    "block_sizes": [
+      288,
+      320,
+      384
+    ],
+    "circle": 3,
+    "epsilon": "1/8",
+    "f": [
+      "1/2",
+      "1/2",
+      "2"
+    ],
+    "g": [
+      "1",
+      "1",
+      "1"
+    ],
+    "kappa": "1"
+  },
+  "inputs_sha256": {
+    "INPUTS.json": "4cf77a44ff46a7ab1b5ecd0d3a89c8888f61ef14a04058cd03a5e856255e0bd8",
+    "coverage_audit.py": "c50e9ab441d605cba1e29df0e315fecebd43b297888b1ddf65c17b5ceb72b241",
+    "coverage_bounds.py": "966e144a398ca981ce82e6f854dede9d962d637431e615a1b26f2f648aefcc7a"
+  },
+  "likelihood_identities": 5961,
+  "minimum_typical_mass_lower_4096": "4011/4096",
+  "scope": "Exact synthetic coverage-law controls, not a full checksum implementation.",
+  "small_block_typical_mass": "0",
+  "status": "PASS",
+  "trace_sha256": "ed856a7cf760e156306b78fcb126afc39c704d69e13070f77ea3ef0110f9a71d"
+}

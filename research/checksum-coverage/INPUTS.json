@@ -1,0 +1,21 @@
+{
+  "author": "conorholds",
+  "canonical_main": "f25a303525df636c079e6a7c574527cccf56e611",
+  "predecessor": {
+    "package": "research/checksum-variance",
+    "sha256": {
+      "FINITE-INPUT.json": "2511346969be5f5989e35ef1557e3a1337ebea2aa2bb6e264512f856341bf2ef",
+      "FINITE.json": "563b35c48c8f339819fde9f543727801e67a6b80765bff1229817220555a860e",
+      "INPUTS.json": "3f1530219d0dcc7c24934cbfa7bad0a463224c767170b647b9e4ff0218863353",
+      "finite_circle.py": "372c678d06a48fe6e9d0fe21a8eae7da2082ee422b6341b3c01c6700bb2dbce8"
+    }
+  },
+  "scope": "Explicit checksum coverage/caps, bounded-draw and rounding errors, and exponential table/pattern overhead. No new filtering certificate or full Subset Sum cutoff.",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "source_repository": "openai/math",
+  "source_sections": {
+    "checksum.tex": "3c0d8f4ae1810e420c4a1e2ee098e4878e9ad39c152c5395eb7ab273078d9818",
+    "filtering.tex": "17443991a51fa09b86c8523ec4cada86cb32833d37b9e9fef0b38b56eb814b8e",
+    "implementation.tex": "ef78713f1e782ccb8c0360aa2ff68e0145cef9105371423e2617215d0d6e3aea"
+  }
+}
