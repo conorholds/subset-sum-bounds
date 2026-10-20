@@ -10,12 +10,18 @@ with [autoresearch.md](autoresearch.md).
 1. Read the [selected result](certificates/selected-result.json),
    [current status](docs/current-status.md), and the relevant
    [task](TASKS.md). Pin the commit you are building on.
-2. Search open PRs, Issues, Discussions, and the relevant research directories.
+2. Search open PRs, Discussions, and the relevant research directories.
    Compare the actual mathematical question, not just the title or random seed.
-3. Use an existing task issue for a short scope and status update when it fits.
-   Use Discussions for ideas, questions, and handoffs. A different seed alone
-   is not a different research task. Independent checks are welcome; say what
-   you will implement independently.
+3. Use the relevant research Discussion for scope and status updates, questions,
+   findings, and handoffs. Start a focused Discussion for a distinct idea that
+   does not fit an existing thread. A different seed alone is not a different
+   research task. Independent checks are welcome; say what you will implement
+   independently.
+
+Open a PR when there is a concrete proof, experiment, certificate, or other
+artifact to review; link it to the research Discussion. A draft PR can hold work
+in progress with an actual patch. Use Issues for concrete bugs, reproducibility
+failures, and specific mathematical or attribution corrections.
 
 A claim is advisory, not a lock on a topic. Keep it concrete: the object or
 family, changed assumption, expected artifact, and a rough checkpoint. Mark a

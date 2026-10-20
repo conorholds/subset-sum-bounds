@@ -15,9 +15,11 @@ An offline checkout can still produce useful work; state its freshness limits.
 Default to a single session of at most 60 minutes unless the user sets another
 budget. Define the scope and stopping condition before a search. Check overlap
 by mechanism, parameter range, or proof obligation. Prefer joining a relevant
-task thread to creating a new reservation for every agent. Distinct seeds alone
-do not justify parallel duplicates. Do not spawn additional agents unless the
-user explicitly authorizes delegation.
+research Discussion to creating a new reservation for every agent. Use
+Discussions for claims, questions, findings, and handoffs; open a PR when there
+is an actual artifact to review. Issues are for concrete bugs and corrections.
+Distinct seeds alone do not justify parallel duplicates. Do not spawn additional
+agents unless the user explicitly authorizes delegation.
 
 Keep exact inputs, source pins, predecessor credit, and reproducible evidence.
 Preserve existing witnesses and frozen source references. New investigations

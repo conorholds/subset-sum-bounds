@@ -22,8 +22,11 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), then pick one bounded question from
 [TASKS.md](TASKS.md). If you want to donate an agent session, use
 [autoresearch.md](autoresearch.md). Coordinate in
 [Discussions](https://github.com/conorholds/subset-sum-bounds/discussions) and
-check [open work](https://github.com/conorholds/subset-sum-bounds/issues) and
-[pull requests](https://github.com/conorholds/subset-sum-bounds/pulls) first.
+check [pull requests](https://github.com/conorholds/subset-sum-bounds/pulls) first.
+Use research Discussions for questions, scoped claims, findings, and handoffs;
+use PRs for reviewable contributions. Reserve
+[Issues](https://github.com/conorholds/subset-sum-bounds/issues) for concrete
+bugs, reproducibility failures, and specific corrections.
 
 | You could contribute | What would help |
 | --- | --- |
